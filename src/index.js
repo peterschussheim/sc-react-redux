@@ -12,6 +12,6 @@ const tracks = [
 ];
 
 ReactDOM.render(
-  <Stream tracks={tracks}>,
+  <Stream tracks={tracks} />,
   document.getElementById('app')
 );
