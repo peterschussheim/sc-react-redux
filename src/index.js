@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Stream from './components/Stream';
 
-const title = `SoundCloud React-Redux app!!! :)`;
 const tracks = [
   {
     title: `Never Gonna Give You Up`
@@ -12,8 +12,6 @@ const tracks = [
 ];
 
 ReactDOM.render(
-  <div>{
-    tracks.map((track, key) => { return <div className="track" key={key}>{track.title}</div> })
-  }</div>,
+  <Stream tracks={tracks}>,
   document.getElementById('app')
 );
