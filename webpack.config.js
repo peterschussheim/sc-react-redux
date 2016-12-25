@@ -7,14 +7,15 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      exclude: /node_modules/
-    }]
+      exclude: /node_modules/,
+      loader: 'react-hot!babel'
+    }],
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
   },
   output: {
-    path: `${__dirname }/dist`,
+    path: `${__dirname}/dist`,
     publicPath: '/',
     filename: 'bundle.js',
   },
