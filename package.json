@@ -43,7 +43,8 @@
     "commitizen": "^2.9.2",
     "global": "^4.3.1",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "redux": "^3.6.0"
   },
   "config": {
     "commitizen": {
