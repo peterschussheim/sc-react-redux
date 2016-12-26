@@ -16,7 +16,7 @@ export default function (state = initialState, action) {
 
 function setTracks(state, action) {
   const { tracks } = action;
-  
+
   // spread over our previous state plus the action payload
   // in our new returned state.
   return [...state, ...tracks];
