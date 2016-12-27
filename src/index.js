@@ -7,15 +7,15 @@ import * as actions from './actions';
 import Stream from './components/Stream';
 import { CLIENT_ID, REDIRECT_URI } from './constants/auth';
 
-SC.initialize({ client_id: CLIENT_ID, redirect_uri: REDIRECT_URI});
+SC.initialize({ client_id: CLIENT_ID, redirect_uri: REDIRECT_URI });
 
 const tracks = [
   {
-    title: `Never Gonna Give You Up`
+    title: 'Never Gonna Give You Up',
   },
   {
-    title: `Can't Touch This`
-  }
+    title: 'Can\'t Touch This',
+  },
 ];
 
 const store = configureStore();
@@ -25,5 +25,5 @@ ReactDOM.render(
   <Provider store={store}>
     <Stream />
   </Provider>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );
