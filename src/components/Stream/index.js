@@ -1,16 +1,22 @@
-// using the returned function of connect, we take Stream component
-// as and argument to return a HOC to access the redux store while
-// the Stream component is concerned with just presenting our data.
-
 import React from 'react';
+import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
+import * as actions from '../../actions'
 import Stream from './presenter';
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   const tracks = state.track;
   return {
     tracks,
   };
 }
 
-export default connect(mapStateToProps)(Stream);
+// mapDispatchToProps helps us pass actions to our presentation container.
+// Returns an object with functions.
+const mapDispatchToProps = dispatch => {
+  return {
+    onAuth: bindActionCreators(actions.auth, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stream);
