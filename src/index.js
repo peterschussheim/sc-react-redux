@@ -33,9 +33,11 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Stream} />
         <Route path="/" component={Stream} />
-        <Route path="/Callback" component={Callback} />
+        <Route path="/callback" component={Callback} />
       </Route>
     </Router>
   </Provider>,
   document.getElementById('app'),
 );
+
+module.hot.accept();
