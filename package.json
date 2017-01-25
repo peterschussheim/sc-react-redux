@@ -32,6 +32,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
+    "exports-loader": "^0.6.3",
+    "imports-loader": "^0.7.0",
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
     "react-addons-test-utils": "^15.4.1",
@@ -48,7 +50,8 @@
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
-    "soundcloud": "^3.1.2"
+    "soundcloud": "^3.1.2",
+    "whatwg-fetch": "^2.0.2"
   },
   "config": {
     "commitizen": {
